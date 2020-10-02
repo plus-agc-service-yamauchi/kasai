@@ -1,0 +1,3 @@
+User-agent: *
+Disallow :
+Sitemap : https://kasaizoukaten.com/sitemap.xml
