@@ -16,254 +16,246 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <!--自作CSS -->
     <style type="text/css">
-    @media (max-width: 736px) {
+        @media (max-width: 736px) {
+            body {
+                font-size: 0.8rem;
+            }
+            footer {
+                font-size: 1rem;
+            }
+            .line:before,
+            .line:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                display: inline-block;
+                width: 23% !important;
+                height: 3px;
+                background-color: #6A3906;
+            }
+            .hero {
+                content: url(images/hero_sp.webp);
+                width: 100%;
+            }
+            .one:before {
+                content: url(images/types_one.svg);
+                display: block;
+                width: 250px;
+                height: 55px;
+                margin: 0 auto;
+            }
+            .two:before {
+                content: url(images/types_two.svg);
+                display: block;
+                width: 250px;
+                height: 55px;
+                margin: 0 auto;
+            }
+            .three:before {
+                content: url(images/types_three.svg);
+                display: block;
+                width: 250px;
+                height: 55px;
+                margin: 0 auto;
+            }
+            .four:before {
+                content: url(images/types_four.svg);
+                display: block;
+                width: 250px;
+                height: 55px;
+                margin: 0 auto;
+            }
+            .five:before {
+                content: url(images/types_five.svg);
+                display: block;
+                width: 250px;
+                height: 55px;
+                margin: 0 auto;
+            }
+        }
+        
         body {
-            font-size: 0.8rem;
+            font-family: 'Noto Serif JP', serif;
         }
-
+        
+        header {}
+        
+        main {}
+        
         footer {
-            font-size: 1rem;
+            color: #6A3906;
+            background: #FAF0EB;
         }
-
+        
+        footer a {
+            color: #6A3906;
+        }
+        
+        footer a:hover {
+            color: #6A3906;
+        }
+        
+        footer p {
+            font-weight: bold;
+        }
+        
+        section {
+            margin: 50px 0;
+        }
+        
+        h1.headline {
+            color: #006F49;
+        }
+        
+        .text-main-color {
+            color: #006F49;
+        }
+        
+        .bg-main-color {
+            background-color: #006F49;
+        }
+        
+        .nav a {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            color: #000000;
+        }
+        
+        .nav a:hover {
+            color: #000000;
+        }
+        
+        .nav a::after {
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+        }
+        
+        .nav a:hover::after {
+            bottom: -4px;
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #types {
+            background: url(images/types_bg.png) no-repeat;
+            background-size: cover;
+            background-position: center top;
+            padding: 30px 0 50px 0;
+        }
+        
+        #types img {
+            transition: all 0.6s ease 0s;
+        }
+        
+        #types img:hover {
+            transform: scale(1.1, 1.1);
+        }
+        
+        #header_info {
+            margin: 0;
+        }
+        
+        #footer_info {
+            background-color: #6A3906;
+            font-size: 120%;
+            color: #FFFFFF;
+        }
+        
+        #footer_menu {
+            padding-top: 50px;
+            margin-top: 0;
+        }
+        
+        .copy {
+            text-align: center;
+            margin: 0;
+            font-size: 12px;
+            font-weight: normal;
+        }
+        
+        ul.footer_menu {
+            list-style-type: none;
+        }
+        
+        ul.footer_menu li {
+            position: relative;
+        }
+        
+        ul.footer_menu li:before {
+            content: url(images/arrow.png);
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            margin-top: -9px;
+        }
+        
+        .phone::before {
+            content: url(images/phone.svg);
+            display: inline-block;
+            width: 25px;
+            height: 10px;
+            margin-right: 5px;
+        }
+        
+        .footer_phone::before {
+            content: url(images/footer_phone.svg);
+            display: inline-block;
+            width: 25px;
+            height: 10px;
+            margin-right: 5px;
+            margin-top: -10px;
+        }
+        
+        .contact {
+            position: relative;
+            background-color: #FFFFFF;
+            border-radius: 4px;
+            line-height: 52px;
+            -webkit-transition: none;
+            transition: none;
+            box-shadow: 0 3px 0 #CCCCCC;
+            color: #6A3906;
+        }
+        
+        .contact:hover {
+            top: -4px;
+            box-shadow: 0 7px 0 #CCCCCC;
+            color: #6A3906;
+        }
+        
+        .line {
+            color: #6A3906;
+            font-weight: bold;
+            position: relative;
+        }
+        
         .line:before,
         .line:after {
             content: '';
             position: absolute;
             top: 50%;
             display: inline-block;
-            width: 23% !important;
+            width: 34%;
             height: 3px;
             background-color: #6A3906;
         }
-
-        .hero {
-            content: url(images/hero_sp.jpg);
-            width: 100%;
+        
+        .line:before {
+            left: 0;
         }
-
-        .one:before {
-            content: url(images/types_one.svg);
-            display: block;
-            width: 250px;
-            height: 55px;
-            margin: 0 auto;
+        
+        .line:after {
+            right: 0;
         }
-
-        .two:before {
-            content: url(images/types_two.svg);
-            display: block;
-            width: 250px;
-            height: 55px;
-            margin: 0 auto;
-        }
-
-        .three:before {
-            content: url(images/types_three.svg);
-            display: block;
-            width: 250px;
-            height: 55px;
-            margin: 0 auto;
-        }
-
-        .four:before {
-            content: url(images/types_four.svg);
-            display: block;
-            width: 250px;
-            height: 55px;
-            margin: 0 auto;
-        }
-
-        .five:before {
-            content: url(images/types_five.svg);
-            display: block;
-            width: 250px;
-            height: 55px;
-            margin: 0 auto;
-        }
-    }
-
-    body {
-        font-family: 'Noto Serif JP', serif;
-    }
-
-    header {}
-
-    main {}
-
-    footer {
-        color: #6A3906;
-        background: #FAF0EB;
-    }
-
-    footer a {
-        color: #6A3906;
-    }
-
-    footer a:hover {
-        color: #6A3906;
-    }
-
-    footer p {
-        font-weight: bold;
-    }
-
-    section {
-        margin: 50px 0;
-    }
-
-    h1.headline {
-        color: #006F49;
-    }
-
-    .text-main-color {
-        color: #006F49;
-    }
-
-    .bg-main-color {
-        background-color: #006F49;
-    }
-
-    .nav a {
-        position: relative;
-        display: inline-block;
-        text-decoration: none;
-        color: #000000;
-    }
-
-    .nav a:hover {
-        color: #000000;
-    }
-
-    .nav a::after {
-        position: absolute;
-        bottom: 2px;
-        left: 0;
-        content: '';
-        width: 100%;
-        height: 1px;
-        background: #333;
-        opacity: 0;
-        visibility: hidden;
-        transition: .3s;
-    }
-
-    .nav a:hover::after {
-        bottom: -4px;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    #types {
-        background: url(images/types_bg.png) no-repeat;
-        background-size: cover;
-        background-position: center top;
-        padding: 30px 0 50px 0;
-    }
-
-    #types img {
-        transition: all 0.6s ease 0s;
-    }
-
-    #types img:hover {
-        transform: scale(1.1, 1.1);
-    }
-
-    #header_info {
-        margin: 0;
-    }
-
-    #footer_info {
-        background-color: #6A3906;
-        font-size: 120%;
-        color: #FFFFFF;
-    }
-
-    #footer_menu {
-        padding-top: 50px;
-        margin-top: 0;
-    }
-
-    .copy {
-        text-align: center;
-        margin: 0;
-        font-size: 12px;
-        font-weight: normal;
-    }
-
-    ul.footer_menu {
-        list-style-type: none;
-    }
-
-    ul.footer_menu li {
-        position: relative;
-    }
-
-    ul.footer_menu li:before {
-        content: url(images/arrow.png);
-        position: absolute;
-        top: 50%;
-        left: -20px;
-        margin-top: -9px;
-    }
-
-    .phone::before {
-        content: url(images/phone.svg);
-        display: inline-block;
-        width: 25px;
-        height: 10px;
-        margin-right: 5px;
-    }
-
-    .footer_phone::before {
-        content: url(images/footer_phone.svg);
-        display: inline-block;
-        width: 25px;
-        height: 10px;
-        margin-right: 5px;
-        margin-top: -10px;
-    }
-
-    .contact {
-        position: relative;
-        background-color: #FFFFFF;
-        border-radius: 4px;
-        line-height: 52px;
-        -webkit-transition: none;
-        transition: none;
-        box-shadow: 0 3px 0 #CCCCCC;
-        color: #6A3906;
-    }
-
-    .contact:hover {
-        top: -4px;
-        box-shadow: 0 7px 0 #CCCCCC;
-        color: #6A3906;
-    }
-
-    .line {
-        color: #6A3906;
-        font-weight: bold;
-        position: relative;
-    }
-
-    .line:before,
-    .line:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        display: inline-block;
-        width: 34%;
-        height: 3px;
-        background-color: #6A3906;
-    }
-
-    .line:before {
-        left: 0;
-    }
-
-    .line:after {
-        right: 0;
-    }
     </style>
 </head>
 
@@ -288,7 +280,7 @@
             </nav>
             <div class="hero">
                 <!-- メイン画像 -->
-                <img src="images/hero.jpg" alt="メモリアルホールかさい メイン" class="img-fluid d-none d-sm-block">
+                <img src="images/hero.webp" alt="メモリアルホールかさい メイン" class="img-fluid d-none d-sm-block">
             </div>
         </header>
         <!-- メイン -->
@@ -312,30 +304,30 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-md-4 mb-5">
                         <img src="images/types_one.svg" alt="一般葬" class="img-fluid d-none d-sm-block">
-                        <p class="one">ご家族やご親戚をはじめ、ご友人やお仕事関係の方など、<br>
-                            故人様と交流のあった方々が広く参列する<br class="d-lg-none">一般的なお葬式です。</p>
+                        <p class="one">ご家族やご親戚をはじめ、ご友人やお仕事関係の方など、<br> 故人様と交流のあった方々が広く参列する
+                            <br class="d-lg-none">一般的なお葬式です。</p>
                     </div>
                     <div class="col-md-4 mb-5">
                         <img src="images/types_two.svg" alt="家族葬" class="img-fluid d-none d-sm-block">
-                        <p class="two">ご家族やご親戚を中心に少人数で、<br>
-                            火葬・通夜・葬儀といった一連の儀式を執り行います。</p>
+                        <p class="two">ご家族やご親戚を中心に少人数で、<br> 火葬・通夜・葬儀といった一連の儀式を執り行います。
+                        </p>
                     </div>
                     <div class="col-md-4 mb-5">
                         <img src="images/types_three.svg" alt="自宅葬" class="img-fluid d-none d-sm-block">
-                        <p class="three">故人様のご自宅で行うお葬式です。<br>
-                            ご自宅のスペースやご要望に合わせた内容で、<br>
-                            お通夜、ご葬儀を行います。</p>
+                        <p class="three">故人様のご自宅で行うお葬式です。<br> ご自宅のスペースやご要望に合わせた内容で、
+                            <br> お通夜、ご葬儀を行います。
+                        </p>
                     </div>
                     <div class="col-md-4 mb-5">
                         <img src="images/types_four.svg" alt="1日葬・直葬" class="img-fluid d-none d-sm-block">
-                        <p class="four">ご家族やご親戚を中心に少人数で、<br>
-                            火葬・通夜・葬儀といった一連の儀式を執り行います。</p>
+                        <p class="four">ご家族やご親戚を中心に少人数で、<br> 火葬・通夜・葬儀といった一連の儀式を執り行います。
+                        </p>
                     </div>
                     <div class="col-md-4 mb-5">
                         <img src="images/types_five.svg" alt="お別れの会" class="img-fluid d-none d-sm-block">
-                        <p class="five">故人様のご自宅で行うお葬式です。<br>
-                            ご自宅のスペースやご要望に合わせた内容で、<br>
-                            お通夜、ご葬儀を行います。</p>
+                        <p class="five">故人様のご自宅で行うお葬式です。<br> ご自宅のスペースやご要望に合わせた内容で、
+                            <br> お通夜、ご葬儀を行います。
+                        </p>
                     </div>
                 </div>
             </section>
@@ -355,14 +347,14 @@
                     </div>
                     <div class="col-md-6 mb-5">
                         <img src="images/fujimaki.svg" alt="家族葬ホール ふじまき" class="img-fluid">
-                        <p>故人様の大切なお見送りのときを<br>
-                            一緒に過ごせるプライベートな空間</p>
+                        <p>故人様の大切なお見送りのときを<br> 一緒に過ごせるプライベートな空間
+                        </p>
                         <h2>家族葬ホール ふじまき</h2>
                     </div>
                     <div class="col-md-6">
                         <img src="images/bekkan.svg" alt="家族葬ホール 別館" class="img-fluid">
-                        <p>小規模・家族葬のご希望に応える、<br>
-                            利便性を兼ね備えたコンパクトな会場</p>
+                        <p>小規模・家族葬のご希望に応える、<br> 利便性を兼ね備えたコンパクトな会場
+                        </p>
                         <h2>家族葬ホール 別館</h2>
                     </div>
                 </div>

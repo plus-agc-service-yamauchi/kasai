@@ -1,10 +1,6 @@
 @font-face {
     font-family: "MyFont";
-    src: url("../fonts/RyuminPro-Bold.otf") format("opentype"),
-        url("../font/RyuminPro-Bold.eot") format("embedded-opentype"),
-        url("../fonts/RyuminPro-Bold.eot?") format("embedded-opentype"),
-        url("../fonts/RyuminPro-Bold.woff") format("woff"),
-        url("../fonts/RyuminPro-Bold.woff2") format("woff2");
+    src: url("../fonts/RyuminPro-Bold.otf") format("opentype"), url("../font/RyuminPro-Bold.eot") format("embedded-opentype"), url("../fonts/RyuminPro-Bold.eot?") format("embedded-opentype"), url("../fonts/RyuminPro-Bold.woff") format("woff"), url("../fonts/RyuminPro-Bold.woff2") format("woff2");
 }
 
 .myfont {
@@ -15,11 +11,9 @@
     body {
         font-size: 1rem;
     }
-
     footer {
         font-size: 1rem;
     }
-
     .line:before,
     .line:after {
         content: '';
@@ -30,7 +24,6 @@
         height: 3px;
         background-color: #6A3906;
     }
-
     .line_green:before,
     .line_green:after {
         content: '';
@@ -41,7 +34,6 @@
         height: 3px;
         background-color: #006F49;
     }
-
     .line_green_two:before,
     .line_green_two:after {
         content: '';
@@ -52,12 +44,10 @@
         height: 3px;
         background-color: #006F49;
     }
-
     .hero {
-        content: url(../images/hero_sp.jpg);
+        content: url(../images/hero_sp.webp);
         width: 100%;
     }
-
     .one:before {
         content: url(../images/types_one.svg);
         display: block;
@@ -65,7 +55,6 @@
         height: 55px;
         margin: 0 auto;
     }
-
     .two:before {
         content: url(../images/types_two.svg);
         display: block;
@@ -73,7 +62,6 @@
         height: 55px;
         margin: 0 auto;
     }
-
     .three:before {
         content: url(../images/types_three.svg);
         display: block;
@@ -81,7 +69,6 @@
         height: 55px;
         margin: 0 auto;
     }
-
     .four:before {
         content: url(../images/types_four.svg);
         display: block;
@@ -89,7 +76,6 @@
         height: 55px;
         margin: 0 auto;
     }
-
     .five:before {
         content: url(../images/types_five.svg);
         display: block;
@@ -97,7 +83,6 @@
         height: 55px;
         margin: 0 auto;
     }
-
     .six:before {
         content: url(../images/types_six.svg);
         display: block;
@@ -105,7 +90,6 @@
         height: 55px;
         margin: 0 auto;
     }
-
     .seven:before {
         content: url(../images/types_seven.svg);
         display: block;
@@ -113,15 +97,12 @@
         height: 55px;
         margin: 0 auto;
     }
-
     .ctable {
         width: 100% !important;
     }
-
     .plans_one_headline {
         position: relative;
     }
-
     .plans_one_headline:before {
         content: url(../images/plans_one_sp.svg);
         position: absolute;
@@ -131,11 +112,9 @@
         height: 55px;
         margin: 0 auto;
     }
-
     .plans_two_headline {
         position: relative;
     }
-
     .plans_two_headline:before {
         content: url(../images/plans_two_sp.svg);
         position: absolute;
@@ -145,11 +124,9 @@
         height: 55px;
         margin: 0 auto;
     }
-
     .plans_three_headline {
         position: relative;
     }
-
     .plans_three_headline:before {
         content: url(../images/plans_three_sp.svg);
         position: absolute;
@@ -159,11 +136,9 @@
         height: 55px;
         margin: 0 auto;
     }
-
     .plans_four_headline {
         position: relative;
     }
-
     .plans_four_headline:before {
         content: url(../images/plans_four_sp.svg);
         position: absolute;
@@ -174,6 +149,7 @@
         margin: 0 auto;
     }
 }
+
 
 /*    @media (min-width: 768px) {
     }*/
@@ -529,7 +505,7 @@ nav.sm a::after {
 }
 
 #offering {
-    background: url(../images/offering_bg.jpg) no-repeat;
+    background: url(../images/offering_bg.webp) no-repeat;
     background-position: bottom;
     background-size: contain;
     margin-bottom: 0;
@@ -583,6 +559,7 @@ nav.sm a::after {
     position: relative;
     /*topBtnの親要素に指定*/
 }
+
 
 /* 5 Columns */
 
