@@ -4,5 +4,5 @@ images='find . -type f -name *.jpg -or -name *.jpeg -or -name *.png -or -name *J
 
 for image in $images;
 do
-    cwebp $image -o $image".webp" >/dev/null 2>&1
+    cwebp $image -o $image".jpg" >/dev/null 2>&1
 done
